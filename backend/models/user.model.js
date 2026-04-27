@@ -26,12 +26,6 @@ const userSchema = new mongoose.Schema(
       enum: ['user', 'admin'],
       default: 'user',
     },
-    solvedProblems: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Problem',
-      },
-    ],
     avatar: {
       type: String,
       default: '',
